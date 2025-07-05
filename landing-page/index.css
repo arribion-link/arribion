@@ -147,7 +147,7 @@ header nav ul li a{
     text-align: center;
     background-color: #3a7bd5;
     margin: 1em;
-    min-width: 10em;
+    min-width: 7em;
     min-height: 7em;
 }
 
@@ -178,7 +178,7 @@ header nav ul li a{
     min-height: 10em;
    padding: 0.5em;
    margin: 0.5em;
-   box-shadow: 1px 1px 19px -0.9em rgb(59, 59, 59);
+   box-shadow: 1px 1px 19px -0.5em rgb(59, 59, 59);
    border-radius: 5px;
    transition: transform 1.5s;
 }

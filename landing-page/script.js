@@ -27,3 +27,14 @@ function hideNav() {
 //calling the functions
 showNav()
 hideNav()
+
+
+// product-drop
+const productDrop = document.getElementById("product-drop");
+const product = document.getElementById('product');
+
+productDrop.style.display = 'none';
+
+product.addEventListener('click', () => {
+    productDrop.style.display = 'block'
+})

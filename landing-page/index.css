@@ -17,11 +17,35 @@ strong{
 }
 
 /* header */
-header{
+.upper-nav{
+    background-color: #232a3a;
+    color: white;
+    padding: 0.7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+    max-width: 4em;
+}
+
+header{
+    margin-top: 3em;
+    /* top: 0; */
     left: 0;
     /* padding: 1em; */
     box-shadow: 1px 1px 20px -5px gray;
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    display: none;
 }
 
 header nav{
@@ -59,17 +83,30 @@ header nav ul li a{
 }
 
 
+/* main */
+main{
+    margin-top: 10em;
+}
 
 
-
-
+/* .introduction-section */
 .introduction-section{
     margin: 1em;
 }
 
 .introduction-section h1{
     margin-bottom: 1.2em;
-    font-size: 2em;
+    font-size: 2.5em;
+    color: #00d2ff;
+    text-align: start;
+
+}
+
+.cta-saas-adv{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 2em;
 }
 
 .introduction-section p{
@@ -119,7 +156,7 @@ header nav ul li a{
 /* about us */
 .about-us-section{
     color: white;
-    background-color: rgb(64, 115, 144);
+    background-color: rgb(75, 74, 77);
     padding: 1em;
 }
 .about-us-section strong{
@@ -136,20 +173,6 @@ header nav ul li a{
     border-radius: 10px;
 }
 
-.stats-container{
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 3em;
-}
-
-.stats-container div{
-    text-align: center;
-    background-color: #3a7bd5;
-    margin: 1em;
-    min-width: 7em;
-    min-height: 7em;
-}
 
 /* Trusted-by-section */
 .Trusted-by-section{
@@ -193,4 +216,40 @@ header nav ul li a{
 .card:hover{
     transform: scale(1.009);
 
+}
+
+
+@media(min-width: 768px){
+    .upper-nav {
+            background-color: #232a3a;
+            color: white;
+            padding: 0.7em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;   
+    }
+    .services-container{
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+     
+}
+
+
+
+
+
+
+
+footer{
+    margin-top: 3em;
+    background-color: #232a3a;
+    height: 40vh;
+    color: white;
+    padding: 2em;
 }
